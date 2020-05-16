@@ -1,0 +1,2 @@
+github "mixedinkey-opensource/MIKMIDI" "master"
+github "SwiftyJSON/SwiftyJSON" ~> 4.0

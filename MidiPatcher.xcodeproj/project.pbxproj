@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A3D76AA246FE09F0054000A /* StateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3D76A9246FE09F0054000A /* StateHolder.swift */; };
+		7A6774B92466BC64001E7BD0 /* PatchesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6774B82466BC64001E7BD0 /* PatchesList.swift */; };
+		7A6774BB246743CA001E7BD0 /* VirtualMidiDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6774BA246743CA001E7BD0 /* VirtualMidiDevice.swift */; };
+		7A6774BD2467E2B7001E7BD0 /* PatchesEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6774BC2467E2B7001E7BD0 /* PatchesEditor.swift */; };
+		7A6774BF2467F168001E7BD0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6774BE2467F168001E7BD0 /* SwiftyJSON.framework */; };
+		7A6774C02467F168001E7BD0 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6774BE2467F168001E7BD0 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7AE8D09E2465F2FA0052F1C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8D09D2465F2FA0052F1C6 /* AppDelegate.swift */; };
 		7AE8D0A02465F2FA0052F1C6 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8D09F2465F2FA0052F1C6 /* Document.swift */; };
 		7AE8D0A22465F2FA0052F1C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8D0A12465F2FA0052F1C6 /* ContentView.swift */; };
@@ -15,6 +21,12 @@
 		7AE8D0AA2465F2FB0052F1C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8D0A82465F2FB0052F1C6 /* Main.storyboard */; };
 		7AE8D0B62465F2FB0052F1C6 /* MidiPatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8D0B52465F2FB0052F1C6 /* MidiPatcherTests.swift */; };
 		7AE8D0C12465F2FB0052F1C6 /* MidiPatcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8D0C02465F2FB0052F1C6 /* MidiPatcherUITests.swift */; };
+		7AE8D0CF2465F36A0052F1C6 /* MIDIDeviceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8D0CE2465F36A0052F1C6 /* MIDIDeviceRow.swift */; };
+		7AE8D0D12465F3C60052F1C6 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 7AE8D0D02465F3C60052F1C6 /* Cartfile */; };
+		7AE8D0D42465F49D0052F1C6 /* MIKMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE8D0D32465F49D0052F1C6 /* MIKMIDI.framework */; };
+		7AE8D0D52465F49D0052F1C6 /* MIKMIDI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE8D0D32465F49D0052F1C6 /* MIKMIDI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7AE8D0D82465F7070052F1C6 /* MIDIDeviceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8D0D72465F7070052F1C6 /* MIDIDeviceList.swift */; };
+		7AE8D0DA24660A5F0052F1C6 /* MIDIPatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8D0D924660A5F0052F1C6 /* MIDIPatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +46,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7AE8D0D62465F49D0052F1C6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7A6774C02467F168001E7BD0 /* SwiftyJSON.framework in Embed Frameworks */,
+				7AE8D0D52465F49D0052F1C6 /* MIKMIDI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7A3D76A9246FE09F0054000A /* StateHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateHolder.swift; sourceTree = "<group>"; };
+		7A6774B82466BC64001E7BD0 /* PatchesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchesList.swift; sourceTree = "<group>"; };
+		7A6774BA246743CA001E7BD0 /* VirtualMidiDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualMidiDevice.swift; sourceTree = "<group>"; };
+		7A6774BC2467E2B7001E7BD0 /* PatchesEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchesEditor.swift; sourceTree = "<group>"; };
+		7A6774BE2467F168001E7BD0 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = MidiPatcher/Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 		7AE8D09A2465F2FA0052F1C6 /* MidiPatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidiPatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE8D09D2465F2FA0052F1C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AE8D09F2465F2FA0052F1C6 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
@@ -50,6 +82,11 @@
 		7AE8D0BC2465F2FB0052F1C6 /* MidiPatcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MidiPatcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE8D0C02465F2FB0052F1C6 /* MidiPatcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiPatcherUITests.swift; sourceTree = "<group>"; };
 		7AE8D0C22465F2FB0052F1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AE8D0CE2465F36A0052F1C6 /* MIDIDeviceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIDeviceRow.swift; sourceTree = "<group>"; };
+		7AE8D0D02465F3C60052F1C6 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		7AE8D0D32465F49D0052F1C6 /* MIKMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MIKMIDI.framework; path = MidiPatcher/Carthage/Build/Mac/MIKMIDI.framework; sourceTree = "<group>"; };
+		7AE8D0D72465F7070052F1C6 /* MIDIDeviceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIDeviceList.swift; sourceTree = "<group>"; };
+		7AE8D0D924660A5F0052F1C6 /* MIDIPatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIPatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6774BF2467F168001E7BD0 /* SwiftyJSON.framework in Frameworks */,
+				7AE8D0D42465F49D0052F1C6 /* MIKMIDI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +116,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A3D76AB246FE1EC0054000A /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				7AE8D0A12465F2FA0052F1C6 /* ContentView.swift */,
+				7AE8D0CE2465F36A0052F1C6 /* MIDIDeviceRow.swift */,
+				7AE8D0D72465F7070052F1C6 /* MIDIDeviceList.swift */,
+				7A6774BC2467E2B7001E7BD0 /* PatchesEditor.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		7A3D76AC246FE2110054000A /* app */ = {
+			isa = PBXGroup;
+			children = (
+				7AE8D0D924660A5F0052F1C6 /* MIDIPatch.swift */,
+				7A6774B82466BC64001E7BD0 /* PatchesList.swift */,
+				7A6774BA246743CA001E7BD0 /* VirtualMidiDevice.swift */,
+				7A3D76A9246FE09F0054000A /* StateHolder.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
 		7AE8D0912465F2FA0052F1C6 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +145,7 @@
 				7AE8D0B42465F2FB0052F1C6 /* MidiPatcherTests */,
 				7AE8D0BF2465F2FB0052F1C6 /* MidiPatcherUITests */,
 				7AE8D09B2465F2FA0052F1C6 /* Products */,
+				7AE8D0D22465F49D0052F1C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,12 +164,14 @@
 			children = (
 				7AE8D09D2465F2FA0052F1C6 /* AppDelegate.swift */,
 				7AE8D09F2465F2FA0052F1C6 /* Document.swift */,
-				7AE8D0A12465F2FA0052F1C6 /* ContentView.swift */,
+				7A3D76AB246FE1EC0054000A /* ui */,
 				7AE8D0A32465F2FB0052F1C6 /* Assets.xcassets */,
 				7AE8D0A82465F2FB0052F1C6 /* Main.storyboard */,
 				7AE8D0AB2465F2FB0052F1C6 /* Info.plist */,
 				7AE8D0AC2465F2FB0052F1C6 /* MidiPatcher.entitlements */,
 				7AE8D0A52465F2FB0052F1C6 /* Preview Content */,
+				7AE8D0D02465F3C60052F1C6 /* Cartfile */,
+				7A3D76AC246FE2110054000A /* app */,
 			);
 			path = MidiPatcher;
 			sourceTree = "<group>";
@@ -138,6 +202,15 @@
 			path = MidiPatcherUITests;
 			sourceTree = "<group>";
 		};
+		7AE8D0D22465F49D0052F1C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A6774BE2467F168001E7BD0 /* SwiftyJSON.framework */,
+				7AE8D0D32465F49D0052F1C6 /* MIKMIDI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +221,7 @@
 				7AE8D0962465F2FA0052F1C6 /* Sources */,
 				7AE8D0972465F2FA0052F1C6 /* Frameworks */,
 				7AE8D0982465F2FA0052F1C6 /* Resources */,
+				7AE8D0D62465F49D0052F1C6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,6 +318,7 @@
 			files = (
 				7AE8D0AA2465F2FB0052F1C6 /* Main.storyboard in Resources */,
 				7AE8D0A72465F2FB0052F1C6 /* Preview Assets.xcassets in Resources */,
+				7AE8D0D12465F3C60052F1C6 /* Cartfile in Resources */,
 				7AE8D0A42465F2FB0052F1C6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,8 +344,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6774BD2467E2B7001E7BD0 /* PatchesEditor.swift in Sources */,
 				7AE8D0A02465F2FA0052F1C6 /* Document.swift in Sources */,
+				7AE8D0DA24660A5F0052F1C6 /* MIDIPatch.swift in Sources */,
+				7AE8D0CF2465F36A0052F1C6 /* MIDIDeviceRow.swift in Sources */,
+				7A6774B92466BC64001E7BD0 /* PatchesList.swift in Sources */,
+				7A6774BB246743CA001E7BD0 /* VirtualMidiDevice.swift in Sources */,
 				7AE8D09E2465F2FA0052F1C6 /* AppDelegate.swift in Sources */,
+				7A3D76AA246FE09F0054000A /* StateHolder.swift in Sources */,
+				7AE8D0D82465F7070052F1C6 /* MIDIDeviceList.swift in Sources */,
 				7AE8D0A22465F2FA0052F1C6 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,10 +518,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MidiPatcher/MidiPatcher.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MidiPatcher/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DS79WMFEL;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MidiPatcher/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = MidiPatcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,10 +545,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MidiPatcher/MidiPatcher.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MidiPatcher/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DS79WMFEL;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MidiPatcher/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = MidiPatcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
