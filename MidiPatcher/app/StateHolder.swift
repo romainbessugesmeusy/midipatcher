@@ -222,14 +222,17 @@ class StateHolder:ObservableObject {
             /// This flag is intended to be used as a visual indicator of
             /// a valid MIDI patch
             matching = false;
+            var patchedCommand:MIKMIDICommand?;
             for j in 0 ..< patches.count {
                 if(self.shouldTrigger(command: command[i], trigger: patches[j].trigger)){
                     matching = true;
-                    patched.append( self.applyPatch(command: command[i], patch: patches[j] ))
-                } else {
-                    patched.append(command[i])
+                    patchedCommand = self.applyPatch(
+                        command: (patchedCommand == nil) ? command[i] : patchedCommand!,
+                        patch: patches[j]
+                    )
                 }
             }
+            patched.append((patchedCommand == nil) ? command[i] : patchedCommand!)
         }
         
         if(virtualDevice.enabled){
